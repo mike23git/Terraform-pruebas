@@ -7,7 +7,7 @@ variable "public_cidrs" {
   type = string
   default = "192.168.1.0/24"
 }
-
+// Aqui indico la ip por la que tiene acceso para entrar a la instancia
 variable "access_ip" {
   type = string
   # default = "92.189.209.164/32"
@@ -26,7 +26,7 @@ variable "main_vol_size" {
 }
 
 
-//keys SSH
+//keys SSH vairables que las coge de terraform.tfvars
 variable "key_name" {
   type = string
 }
